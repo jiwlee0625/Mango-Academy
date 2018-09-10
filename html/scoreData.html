@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="../css/graphstyles.css">
+        <title>Mango Academy</title>
+    </head>
+
+    <body>
+
+       <!-- Top Layer -->
+        <div class="navButton" id="backBttn" onclick="goBack()">
+            <p>BACK</p>
+        </div>
+        <div class="navButton" id="registerBttn" onclick="logout()">
+            <p>Log Out</p>
+        </div>
+        <div id="logo">
+            <h1>Mango Academy</h1>
+        </div>
+
+        <!-- Graph Space -->
+        <div id="graphspace">
+            <svg class="chart" width="85%" height="80%" aria-labelledby="title desc" role="img">
+                  <title id="title">A bar chart showing information</title>
+                  <desc id="desc">4 apples; 8 bananas; 15 kiwis; 16 oranges; 23 lemons</desc>
+                  <g class="bar">
+                    <rect width="40" height="19"></rect>
+                    <text x="45" y="9.5" dy=".35em">English</text>
+                  </g>
+                  <g class="bar">
+                    <rect width="80" height="19" y="20"></rect>
+                    <text x="85" y="28" dy=".35em">Math</text>
+                  </g>
+                  <g class="bar">
+                    <rect width="150" height="19" y="40"></rect>
+                    <text x="150" y="48" dy=".35em">History</text>
+                  </g>
+                  <g class="bar">
+                    <rect width="160" height="19" y="60"></rect>
+                    <text x="161" y="68" dy=".35em">Science</text>
+                  </g>
+            </svg>
+            <!-- 3.	Bar graph of each subject for all students -->
+        </div>
+        <div id="graphspace">
+            <!-- 2.	Bar graph of each student for all subjects -->
+        </div>
+        <div id="graphspace">
+            <!-- 1.	Bar graph of all students all subjects -->
+        </div>
+    </body>
+</html>
+
+<script>
+    function goBack(subject){
+        window.location.assign("../html/teacherMain.html");
+    }
+    function logout() {
+        window.location.href = '../php/logout.php';
+    }
+</script>

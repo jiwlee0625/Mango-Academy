@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi|Noto+Sans|Roboto');
+
+.col-1 {width: 8.333%;}
+.col-2 {width: 16.666%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.333%;}
+.col-5 {width: 41.666%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.333%;}
+.col-8 {width: 66.666%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.333%;}
+.col-11 {width: 91.666%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+body {
+    background-image: url("../img/background.jpg");
+}
+#logo h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 3vw;
+    font-family: 'Baloo Thambi', cursive;
+}
+.navButton {
+    margin-top: 1.4vh;
+    background-color: white;
+    height: 2vw;
+    width: 6vw;
+    font-size: 1vw;
+    font-family: 'Baloo Thambi', cursive;
+    text-align: center;
+    opacity: 0.5;
+}
+.navButton:hover {
+    opacity: 0.8;
+}
+.navButton p{
+    margin: 0.5vh auto;
+}
+.emptyBttn {
+    margin-top: 1.4vh;
+    height: 2vw;
+    width: 6vw;
+    font-size: 1vw;
+    font-family: 'Baloo Thambi', cursive;
+    text-align: center;
+    opacity: 0.5;
+}
+.emptyBttn:hover {
+    opacity: 0.8;
+}
+.emptyBttn p{
+    margin: 0.5vh auto;
+}
+
+#registerBttn {
+    float: right;
+    margin-right: 2vw;
+}
+#empty {
+    float: left;
+    margin-left: 2vw;
+}
+#backBttn {
+    float: left;
+    margin-left: 2vw;
+}
+#logoutBttn {
+    float: right;
+    margin-right: 2vw;
+}
+#logo {
+    font-size: 20vw;
+    color: white;
+    font-family: 'Baloo Thambi', cursive;
+    text-align: center;
+}
+
+#loginSpace {
+    margin-top: 10vh;
+    margin-right: 25vh;
+    margin-left: 25vh;
+    background-color: white;
+    border: 0.2vh black;
+    height: 60vh;
+    opacity: 0.5;
+    padding-top: 2vh;
+    font-family: 'Baloo Thambi', cursive;
+    text-align: center;
+    font-size: 4vh;
+    color: black;
+}
+#loginSpace form{
+    height: 60vh;
+}
+#submitBttn {
+    height: 5vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    font-size: 2.5vh;
+    background-color: white;
+    text-align: center;
+    font-family: 'Baloo Thambi', cursive;
+    opacity: 0.8vh;
+    border-radius: 0.5vh;
+}
+
+/**QuizList Exclusive CSS**/
+#quizTypeSelect {
+    margin-top: 7vh;
+    margin-right: 30vh;
+    margin-left: 30vh;
+}
+
+.quiz {
+    width: 70vw;
+    height: 12vh;
+    opacity: 0.6;
+    text-align: center;
+    margin: 2px auto;
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 1.5vw;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.quiz:hover {
+    opacity: 0.9;
+}
+
+.quiz h2 {
+    padding-top: 2.5vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#prompt {
+    margin-top: 5vh;
+    margin-right: 30vh;
+    margin-left: 30vh;
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 1.5vw;
+    color: white;
+}
+
+/**TeacherMain Exclusive CSS**/
+#featureTypeSelect {
+    margin-top: 7vh;
+    margin-right: 30vh;
+    margin-left: 30vh;
+}
+
+.feature {
+    width: 70vw;
+    height: 12vh;
+    opacity: 0.6;
+    text-align: center;
+    margin: 2px auto;
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 1.5vw;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.feature:hover {
+    opacity: 0.9;
+}
+
+.feature h2 {
+    padding-top: 2.5vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/**Quiz Exclusive CSS**/
+#pageMsgBox{
+    height:50%;
+    width: 80%;
+    position: relative;
+    top:35vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: hidden;
+}
+
+#pageMsg{
+    width: 100%;
+    position: relative;
+    font-size: 14vh;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-shadow: .25vh .25vh black ;
+}
+
+#questionBox {
+    margin-top: 15vh;
+    margin-right: 30vh;
+    margin-left: 30vh;
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 1.5vw;
+    color: white;
+}
+#answerMsg {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 30vh;
+    margin-left: 30vh;
+    text-align: right;
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 1vw;
+    color: white;
+}
+#answerBox {
+    margin-top: 10vh;
+    margin-right: 30vh;
+    margin-left: 30vh;
+    text-align: center;
+    height: 40vh;
+    color: black;
+}
+#answerText {
+   width: 40vw;
+   height: 2.5vw;
+   font-family: 'Baloo Thambi', cursive;
+   font-size: 1.5vw;
+   color: black;
+}
+#enterBttn {
+    opacity: 0.6;
+    text-align: center;
+    margin: 2px auto;
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 1.5vw;
+    border-radius: 2px;
+    background-color: white;
+}
+#restartBttn {
+    opacity: 0.6;
+    text-align: center;
+    margin: 2px auto;
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 1.5vw;
+    border-radius: 2px;
+    background-color: white;
+}
+#formspace {
+    padding: 1vw;
+    margin-top: 10vh;
+    margin-right: 30vh;
+    margin-left: 30vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 1.5vw;
+    background-color: white;
+    opacity: 0.6;
+}
+#quizcontainer {
+    margin-top: 15vh;
+    margin-right: 30vh;
+    margin-left: 30vh;
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 1.5vw;
+    color: white;
+}
+#enterBox {
+    text-align: center;
+}
+#answerButton{
+    margin-top: 1.4vh;
+    background-color: white;
+    height: 2vw;
+    width: 6vw;
+    font-size: 1vw;
+    font-family: 'Baloo Thambi', cursive;
+    text-align: center;
+    opacity: 0.5;
+}
+#graphspace {
+    padding: 2vw;
+    margin-top: 10vh;
+    margin-right: 30vh;
+    margin-left: 30vh;
+    margin-bottom: 10vh;
+    font-family: 'Baloo Thambi', cursive;
+    color: black;
+    font-size: 1.5vw;
+    background-color: white;
+    opacity: 0.6;
+    text-align: center;
+}

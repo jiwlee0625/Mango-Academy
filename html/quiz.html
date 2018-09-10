@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mango Academy</title>
+        <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+        <script type="text/javascript" src="../js/quizRunner.js"></script>
+        <script type="text/javascript" src="../js/quizQuestions.js"></script>
+    </head>
+
+    <body onload="setUpPage();">
+        <!-- Top Layer -->
+        <div class="navButton" id="backBttn">
+            <!--space holder: button only shows up if user is a teacher"-->
+            <p>BACK</p>
+        </div>
+        <div class="navButton" id="logoutBttn" onclick="logout()">
+            <!-- Not Implemented -->
+            <p>Log Out</p>
+        </div>
+        <div id="logo">
+            <h1>Mango Academy</h1>
+        </div>
+
+        <div id="quizContainer">
+            <div id="allQuestions">
+                <h2>Read each question carefully</h2>
+            </div>
+            <div id="allAnswers">
+                <h2>and choose the best answer:</h2>
+            </div>
+
+        </div>
+
+        <div id="endMessage">
+            <h1>Thank you for taking the quiz!</h1>
+            <h2>Your score has been recorded</h2>
+            <p>You may now logout (come back soon!) or return to the home page by clicking on the buttons on the top.</p>
+        </div>
+        <div id="submitButton" onclick="submitQuiz()">
+                <p>Done!</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+        <title>Mango Academy</title>
+    </head>
+
+    <body>
+        <!-- Top Layer -->
+        <div class="emptyBttn" id="empty">
+            <!--space holder: will be place for another button"-->
+        </div>
+        <div class="navButton" id="logoutBttn" onclick="logout()">
+            <!-- Not Implemented -->
+            <p>Log Out</p>
+        </div>
+        <div id="logo">
+            <h1>Mango Academy</h1>
+        </div>
+        <div id = "prompt">
+            <h3>What would you like to do?</h3>
+        </div>
+        <div id="featureTypeSelect">
+            <div class="feature" onclick="callPage('../php/manageQuestions.php');">
+                <h2>Manage Questions</h2>
+            </div>
+            <div class="feature" onclick="callPage('../php/manageStudents.php');">
+                <h2>Manage Students</h2>
+            </div>
+            <div class="feature" onclick="callPage('../html/quizlistpage.html');">
+                <h2>Take a Sample Quiz</h2>
+            </div>
+            <div class="feature" onclick="callPage('../html/scoreData.html');">
+                <h2>View Quiz Score Data</h2>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<script>
+    function callPage(subject){
+        window.location.assign(subject);
+    }
+    function logout() {
+        window.location.href = '../php/logout.php';
+    }
+</script>
+
+
